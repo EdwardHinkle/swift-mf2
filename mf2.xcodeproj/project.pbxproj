@@ -10,6 +10,7 @@
 		33661B751EADBCED00DED2F7 /* mf2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33661B6B1EADBCED00DED2F7 /* mf2.framework */; };
 		33661B7A1EADBCED00DED2F7 /* mf2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33661B791EADBCED00DED2F7 /* mf2Tests.swift */; };
 		33661B7C1EADBCED00DED2F7 /* mf2.h in Headers */ = {isa = PBXBuildFile; fileRef = 33661B6E1EADBCED00DED2F7 /* mf2.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		33661B911EADBD0D00DED2F7 /* mf2-parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33661B901EADBD0D00DED2F7 /* mf2-parser.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		33661B741EADBCED00DED2F7 /* mf2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mf2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		33661B791EADBCED00DED2F7 /* mf2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mf2Tests.swift; sourceTree = "<group>"; };
 		33661B7B1EADBCED00DED2F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		33661B901EADBD0D00DED2F7 /* mf2-parser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "mf2-parser.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 			children = (
 				33661B6E1EADBCED00DED2F7 /* mf2.h */,
 				33661B6F1EADBCED00DED2F7 /* Info.plist */,
+				33661B901EADBD0D00DED2F7 /* mf2-parser.swift */,
 			);
 			path = mf2;
 			sourceTree = "<group>";
@@ -198,6 +201,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33661B911EADBD0D00DED2F7 /* mf2-parser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -362,6 +366,7 @@
 		33661B831EADBCED00DED2F7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 26VU3UTL8J;
 				INFOPLIST_FILE = mf2Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -374,6 +379,7 @@
 		33661B841EADBCED00DED2F7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 26VU3UTL8J;
 				INFOPLIST_FILE = mf2Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
